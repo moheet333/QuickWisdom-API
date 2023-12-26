@@ -3,6 +3,6 @@ const router = express.Router();
 
 const { getRandomQuote } = require("../controllers/generateRandom");
 
-router.route("/").get(getRandomQuote);
+router.route("/generateRandom").get(getRandomQuote);
 
 module.exports = router;
